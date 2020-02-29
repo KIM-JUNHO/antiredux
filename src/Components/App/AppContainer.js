@@ -7,6 +7,12 @@ class AppContainer extends Component {
     message: "Hello"
   };
 
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({ message: "Bye" });
+    }, 2000);
+  };
+
   render() {
     return (
       <Store.Provider value={this.state}>
