@@ -3,15 +3,12 @@ import AppPresenter from "./AppPresenter";
 import Store from "store";
 
 class AppContainer extends Component {
-  state = {
-    message: "Hello"
-  };
-
-  componentDidMount = () => {
-    setTimeout(() => {
-      this.setState({ message: "Bye" });
-    }, 2000);
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: "hello"
+    };
+  }
 
   render() {
     return (
