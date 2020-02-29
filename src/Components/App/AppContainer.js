@@ -8,7 +8,7 @@ function AppContainer() {
   };
 
   return (
-    <Store.Provider value={state.message}>
+    <Store.Provider value={state}>
       <AppPresenter />
     </Store.Provider>
   );
