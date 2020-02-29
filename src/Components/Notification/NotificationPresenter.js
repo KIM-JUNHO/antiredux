@@ -56,7 +56,7 @@ const NotificationPresenter = ({ id, text, seen }) => (
   <Notification seen={seen}>
     <Flex alignCenter justifyBetween>
       <Title>
-        <Store.Consumer>{store => JSON.stringify(store)}</Store.Consumer>
+        <Store.Consumer>{store => store.message}</Store.Consumer>
       </Title>
       <FlexItem>
         <Fragment>
