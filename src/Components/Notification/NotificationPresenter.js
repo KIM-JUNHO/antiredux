@@ -61,7 +61,11 @@ const NotificationPresenter = ({ id, text, seen }) => (
           <Store.Consumer>
             {store => (
               <Fragment>
-                <Button success seen={seen} onClick={store.changeMessage}>
+                <Button
+                  success
+                  seen={seen}
+                  onClick={() => store.seeNotification(id)}
+                >
                   <FontAwesome name="check" />
                 </Button>
                 <Button
